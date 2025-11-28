@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Сайт-візитка</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                padding: 60px 15px;
+            }
+
+            .avatar {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .lead {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero text-center">
+        <img src="photo_2025-11-28_10-28-31.jpg" alt="Фото" class="avatar">
+        <h1 class="fw-bold">Богдан Маценко</h1>
+        <p class="lead">Frontend розробник / Web-дизайнер / Фрилансер</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">Зв’язатися</a>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Про мене</h2>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            Я займаюся створенням сучасних та адаптивних сайтів. Працюю з HTML, CSS, JavaScript та Bootstrap.
+            Постійно вивчаю нові технології та вдосконалюю навички.
+        </p>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Навички</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">HTML / CSS</h5>
+                        <p class="card-text">Створення адаптивної та валідної верстки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">JavaScript</h5>
+                        <p class="card-text">Додавання інтерактивності та логіки на сайт.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Bootstrap</h5>
+                        <p class="card-text">Швидка розробка адаптивних інтерфейсів.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Контакти</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <ul class="list-group shadow-sm">
+                    <li class="list-group-item">
+                        📧 Email: <strong>example@gmail.com</strong>
+                    </li>
+                    <li class="list-group-item">
+                        📱 Телефон: <strong>+380 99 999 99 99</strong>
+                    </li>
+                    <li class="list-group-item">
+                        💼 LinkedIn: <a href="#" target="_blank">Мій профіль</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
